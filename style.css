@@ -1,0 +1,112 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  background: #f3f3f3;
+  margin: 0;
+  padding: 1rem;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+.container {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.coluna {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+video, canvas {
+  background-color: #000;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.3);
+}
+
+.preview {
+  position: relative;
+  width: 480px;
+  height: 360px;
+}
+
+.preview canvas,
+.preview video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 480px;
+  height: 360px;
+  border-radius: 8px;
+}
+
+.preview video {
+  display: none;
+}
+
+.controles {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #0077ff;
+  color: #fff;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #005fd1;
+}
+
+.opcoes {
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.adesivos {
+  margin-top: 1rem;
+}
+
+.adesivo {
+  width: 50px;
+  cursor: pointer;
+  margin: 0.3rem;
+  transition: transform 0.2s;
+}
+
+.adesivo:hover {
+  transform: scale(1.2);
+}
+
+#feedback {
+  margin-top: 0.5rem;
+}
+
+.preto-e-branco {
+  filter: grayscale(100%);
+}
+
+.sepia {
+  filter: sepia(100%);
+}
+
+.acoes {
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 1rem;
+}
